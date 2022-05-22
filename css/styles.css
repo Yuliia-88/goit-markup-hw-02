@@ -43,7 +43,7 @@ body {
 /* ---------------------Шапка, навигация--------------------- */
 .header-logo,
 .footer-logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -117,17 +117,16 @@ body {
 }
     
 .hero-btn {
+    color: var(--text-white);
+    background: var(--accent-color);
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
 }
 
 .hero-btn:hover,
-.hero-btn:focus,
-.portfolio-btn:hover,
-.portfolio-btn:focus {
-    background: var(--accent-color);
-    color: var(--text-white);
+.hero-btn:focus {
+    background: #188CE8;
 }
 
 /* -----------------Кнопки на странице Портфолио----------------- */
@@ -135,6 +134,17 @@ body {
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.03em;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background: var(--accent-color);
+    color: var(--text-white);
+}
+
+.portfolio-btn-list .current {
+    background: var(--accent-color);
+    color: var(--text-white);
 }
 
 /* ---------------------Особенности--------------------- */
@@ -206,7 +216,13 @@ body {
     background: var(--second-background-color);
 }
 
-.footer-adress-link,
+.footer-adress-link {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--text-white);
+}
+
 .footer-mail,
 .footer-tel {
     font-style: normal;
